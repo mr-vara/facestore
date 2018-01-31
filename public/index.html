@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="facestore">
+	<head>
+		<title>Facestore - Cool ASCII faces store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/controllers/main-ctrl.js"></script>
+    <script src="src/directives/header.js"></script>
+    <script src="src/directives/footer.js"></script>
+   	<script src="src/directives/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="src/assets/css/custom.css">
+	</head>
+	<body>
+  	<div ng-controller="MainCtrl">
+      <!-- Header Directive -->
+      <header></header>
+
+      <!-- Main Content -->
+      <div class="sixteen wide column" id="main-container">
+        <div class="ui raised very padded container segment">
+          <h2 class="ui header">Buy wide verity of cool ASCII faces here</h2>
+            <!-- Loader Directive -->
+            <loader></loader>
+                <!-- Toolbar (sorting) -->            
+                <div class="ui menu">
+                  <div class="header item"> Sort By </div>
+                  <a class="item" ng-click="getSortedBy('size')" ng-class="{active: meta.sortBy == 'size'}">Size</a>
+                  <a class="item" ng-click="getSortedBy('price')" ng-class="{active: meta.sortBy == 'price'}">Price</a>
+                </div>
+                <!-- Products Grid -->
+                <div class="ui five column stackable centered grid container">
+                	<div class="column"  ng-repeat="product in data.products">
+                		<div class="ui centered fluid card">
+                			<div class="ui center aligned image" style="font-size:{{product.size}}px;" id="face-container">{{product.face}}</div>
+                			<div class="content">
+				                <div class="header">US$ {{formatPrice(product.price)}}</div>
+					                <div class="meta"><span class="date"><i class="clock outline icon"></i> {{formatDate(product.date)}}</span></div>
+                  				<span class="left floated meta"><i class="expand outline icon"> </i> {{product.size}} px </span>
+                      </div>
+
+                      <div class="ui bottom attached button"><i class="cart icon"></i>Buy</div>
+		                </div>
+                  </div>
+                </div>	
+
+                <!-- End of Catalouge Message -->
+                <div class="ui red message" ng-if="meta.currentPage==10" style="text-align:center;">~ end of catalogue ~</div>
+
+                <!-- Pagination -->
+                <div class="container centered" id="pagination-container">
+                  <button class="ui icon button" id="div1" ng-click="getPrevPage()" ng-class="{disabled: meta.currentPage == 1}"> <i class="left arrow icon"></i></button>
+                  <button class="ui icon button disabled">Page : {{meta.currentPage}}/10</button>
+                  <button class="ui icon button" ng-click="getNextPage()"  ng-class="{disabled: meta.currentPage == 10}"><i class="right arrow icon"></i></button>
+                </div>
+          </div>
+        </div>
+
+        <!-- Footer Directive -->
+        <footer></footer>
+
+      </div>
+  	</body>
+</html>

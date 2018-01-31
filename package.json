@@ -1,0 +1,16 @@
+{
+  "name": "facestore",
+  "version": "1.0.0",
+  "description": "Cool ASCII faces store",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "express": "^4.16.2"
+  }
+}
