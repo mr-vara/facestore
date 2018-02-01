@@ -1,7 +1,7 @@
 Facestore - Cool ASCII Faces store
 ====
 
-This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ・∀・)ノ` and `¯_(ツ)_/¯`, in a wide variety of font sizes. The homepage should display a list of products for people to browse.
+This is an ecommerce site, where you can buy all sorts of ascii faces like `(ノ・∀・)ノ` and `¯_(ツ)_/¯`, in a wide variety of font sizes. The homepage will display a list of products for people to browse.
 
 
 ## Installation
@@ -65,3 +65,13 @@ Highlights
 NOTE
 ----
 - This project is developed on a Windows machine, may encounter problem with other OS
+
+Screenshots
+----
+![Desktop Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/desktop1.jpg "Desktop Screenshot")
+
+![Desktop Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/desktop2.jpg "Desktop Screenshot")
+
+![Responsive Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/mobile1.jpg "Responsive Screenshot")
+
+![Responsive Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/mobile2.jpg "Responsive Screenshot")
