@@ -46,7 +46,7 @@ module.exports = function (faces) {
         var start = end - items;
         const newData = Object.assign({}, module.data);
         newData.products = module.data.products.slice(start,end);
-        return new_data;
+        return newData;
     };
 
     return module;
