@@ -65,3 +65,7 @@ Highlights
 NOTE
 ----
 - This project is developed on a Windows machine, may encounter problem with other OS
+
+Screenshots
+----
+![Desktop Screenshot](public/assets/images/screens/desktop1.jpg "Desktop Screenshot")
