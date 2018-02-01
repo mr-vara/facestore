@@ -14,8 +14,15 @@
   }
   #face-container {
     padding:30px 10px 30px 10px;
-    font-weight:bold
+    font-weight:bold;
+    color: #00B5AD;
   }
   #main-container {
      margin-top:70px;
+  }
+  .center {
+     text-align: center;
+  }
+  .right {
+     text-align: right;
   }
