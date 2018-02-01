@@ -68,4 +68,10 @@ NOTE
 
 Screenshots
 ----
-![Desktop Screenshot](public/assets/images/screens/desktop1.jpg "Desktop Screenshot")
+![Desktop Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/desktop1.jpg "Desktop Screenshot")
+
+![Desktop Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/desktop2.jpg "Desktop Screenshot")
+
+![Responsive Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/mobile1.jpg "Responsive Screenshot")
+
+![Responsive Screenshot](https://raw.githubusercontent.com/mr-vara/facestore/master/public/src/assets/images/screens/mobile2.jpg "Responsive Screenshot")
